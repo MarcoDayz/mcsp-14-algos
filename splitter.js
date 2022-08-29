@@ -26,30 +26,30 @@
 // console.log(splitter(arr, num))
 
 
-// function splitter(arr, num) {
-//     // your code here
-// //create empty array
-// let result = [];
+function splitter(arr, num) {
+    // your code here
+//create empty array
+let result = [];
 
-// //use for of loop to access elements of array
-// for(let elem of arr){
-//     //create var to reference las arr elem
-//     let lastArr = result[result.length-1];
-//     //if last result arr doesnt exist or length of arr elem is equal to num
-//     if(!lastArr || lastArr.length === num){
-//         //push element in an arr to result arr
-//         result.push([elem])
-//     }else{
-//         //if there is one element then push the element on last arr
-//         lastArr.push(elem)
-//     }
-// }
-// //return result
-// return result;
-// }
+//use for of loop to access elements of array
+for(let elem of arr){
+    //create var to reference las arr elem
+    let lastArr = result[result.length-1];
+    //if last result arr doesnt exist or length of arr elem is equal to num
+    if(!lastArr || lastArr.length === num){
+        //push element in an arr to result arr
+        result.push([elem])
+    }else{
+        //if there is one element then push the element on last arr
+        lastArr.push(elem)
+    }
+}
+//return result
+return result;
+}
 
-// const arr = [1,2,3,4,5,6,7,8,9,10]
-// const num = 3
-// // should return [[1,2,3], [4,5,6], [7,8,9], [10]]
-// console.log(splitter(arr, num))
+const arr = [1,2,3,4,5,6,7,8,9,10]
+const num = 3
+// should return [[1,2,3], [4,5,6], [7,8,9], [10]]
+console.log(splitter(arr, num))
 
