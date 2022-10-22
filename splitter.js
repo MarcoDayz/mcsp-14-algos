@@ -39,9 +39,11 @@ for(let elem of arr){
     if(!lastArr || lastArr.length === num){
         //push element in an arr to result arr
         result.push([elem])
+        // console.log(result)
     }else{
         //if there is one element then push the element on last arr
         lastArr.push(elem)
+        // console.log(lastArr)
     }
 }
 //return result

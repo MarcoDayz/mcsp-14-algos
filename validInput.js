@@ -8,8 +8,6 @@
 // should return a true or false depending on if the str is balanced.
 
 
-let str = '()';
-
 // function validInput(str){
 //     const container = [];
 //     for(let i = 0; i < str.length; i++){
@@ -27,6 +25,8 @@ let str = '()';
 
 // console.log(validInput(str))
 
+let str = '())';
+
 
 function validInput(str){
 const arr = [];
@@ -39,7 +39,6 @@ for(let char of str){
         arr.pop();
         console.log(arr)
     }
-
 }
 return arr.length === 0;
 }

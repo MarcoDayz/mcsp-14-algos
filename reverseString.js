@@ -21,3 +21,16 @@ console.log(reverseString("Reverse This String"))
 // return resultStr;
 // }
 // console.log(reverseStr('Reverse This String'))
+
+
+// function reverseString(str){
+//     let i = str.length -1
+//     console.log(i)
+//     let result = ""
+//     while(i >= 0){
+//         result += str[i]
+//         i--;
+//     }
+//     return result;
+// }
+// console.log(reverseString(`Reverse String`))
