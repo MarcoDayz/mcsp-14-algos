@@ -23,7 +23,6 @@ const romanToInt = (str) => {
     //put num result in variable
     let num = romanInt.get(str[str.length - 1]);
         for (let i = strLength - 2; i >= 0; i--) {
-
         if (romanInt.get(str[i]) >= romanInt.get(str[i + 1])) {
             num += romanInt.get(str[i]);
         } else {
@@ -33,8 +32,8 @@ const romanToInt = (str) => {
     return num;
 };
 
-console.log(romanToInt("III"));
+// console.log(romanToInt("III"));
 console.log(romanToInt("IV"));
-console.log(romanToInt("IX"));
-console.log(romanToInt("LVIII"));
-console.log(romanToInt("MCMXCIV"));
+// console.log(romanToInt("IX"));
+// console.log(romanToInt("LVIII"));
+// console.log(romanToInt("MCMXCIV"));
